@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body {
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  color: Gold;
+}
+p {color: DeepPink;}
+h1 {font-size: 35px;}
+html {
+  background: linear-gradient(to bottom right, SpringGreen, RebeccaPurple);
+  scrollbar-color: PowderBlue Salmon;
+}
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+.center-fit {
+  max-width: 100%;
+  max-height: 70vh;
+}
+.grid-container {
+  display: flex;
+  padding: 4px;
+}
+.image-column {
+  margin-left: 4px;
+  margin-right:4px;
+}
+
+
+
+header {
+  padding:10px 10px 6px 10px;
+  max-width:100%;
+  border:1px solid Teal;
+  background: linear-gradient(to bottom left, OrangeRed, PaleVioletRed);
+}
+nav {
+  margin-bottom:10px;
+  margin-top:-9px;
+  padding-top:4px;
+  max-width:100%;
+  border:1px solid OliveDrab;
+  background: linear-gradient(to right, SteelBlue, Fuchsia);
+}
+footer {
+  margin-top:10px;
+  padding-left:4px;
+  padding-right:4px;
+  padding-top:4px;
+  background: linear-gradient(to top right, FireBrick, LawnGreen);
+  max-width:100%;
+  border:1px solid Chartreuse;
+}
+section {
+  margin-bottom:10px;
+  border:1px solid LightSkyBlue;
+  background: linear-gradient(to left, SeaGreen, Maroon);
+}
+.content {
+  padding:4px;
+}
+.content-small {
+  padding:4px;
+}
+.subtitle {
+  padding:4px;
+  border:1px solid Chocolate;
+  background: linear-gradient(to bottom right, MediumVioletRed, Navy);
+}
+.top-padded {
+  padding-top:4px;
+}
+.button-bar {
+  margin-top:-19px;
+  padding-top:4px;
+  margin-bottom:10px;
+  border:1px solid MediumOrchid;
+  background: linear-gradient(to top right, BlueViolet, GoldenRod);
+}
+.subtitle-fixed {
+  padding: 4px;
+  margin: 0px;
+  border:1px solid Green;
+  background: linear-gradient(to right, Tomato, DarkMagenta);
+}
+.subtitle-first-fixed {
+  padding:4px;
+  margin-bottom: 0px;
+  border:1px solid Peru;
+  background: linear-gradient(to left, LightGreen, Yellow);
+}
+hr {
+  background: linear-gradient(to right, Pink, Cornsilk);
+  height: 3px;
+  border: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.padded-box {
+  margin: 4px;
+  border:1px solid Purple;
+  background: linear-gradient(to top, GreenYellow, HotPink);
+}
