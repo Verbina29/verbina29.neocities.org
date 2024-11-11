@@ -2,6 +2,20 @@
 html {
   scrollbar-color: #B60000 #242426;  
 }
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: solid #b60000 1px;
+    padding: 10px;
+}
+.navFrame {
+    height: 68px;
+    width: calc(100% - 20px);
+}
+
 header, nav, main, aside, footer, section, .subtitle, .subtitle-fixed, .subtitle-first-fixed, .button-bar, .padded-box {
 	border:1px solid #B60000;
 }
