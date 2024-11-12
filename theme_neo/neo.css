@@ -30,7 +30,7 @@ iframe {
     margin: 10px;
 }
 
-main, aside {
+main, aside, section {
     margin: 10px;
     border: 1px solid #b60000;
     padding: 10px;
@@ -41,19 +41,26 @@ aside {
     flex: 15%;
 }
 
-main {
-    flex-grow: 1;
+a {
+    color: #74fdff;
 }
+a:visited {
+    color: #979eff;
+}
+
 .columns {
     flex-direction: column;
     flex-grow: 0;
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 .centeredText {
     text-align: center;
 }
 .flex {
     display: flex;
+}
+main, .main {
+    flex-grow: 1;
 }
 .multi {
     margin-top: 20px;
@@ -75,6 +82,7 @@ h2 {
 .updates {
     margin: 0;
     flex-grow:1;
+    height: 210px;
 }
 .frame {
     padding: 0;
@@ -101,12 +109,16 @@ h2 {
     border-color: white;
     border-width: 1px;
     border-radius: 8px;
-    background-color: #b60000;
+    background-color: #cf0000;
     color: black;
+    font-weight: bold;
     flex: 1 0 0;
     text-align: center;
     padding: 3px;
     align-self: stretch;
+}
+.button:visited {
+    color: black;
 }
 .button:hover {
     background-color: white;
