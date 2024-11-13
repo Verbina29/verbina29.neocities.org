@@ -73,6 +73,12 @@ main, .main {
         flex-direction: column;
     }
 }
+@media (min-width:1600px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
 
 h1 {
     border-bottom: 1px solid #b60000;
@@ -163,4 +169,33 @@ dt::after {
 dd {
     margin: 0;
     padding-left: 16px;
+}
+
+figure {
+    background-color: #2c2c2e;
+    border: solid #b60000 1px;
+    max-width: 100%;
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hint, .hint:visited {
+    color: lightgrey;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+.large {
+    flex: 100%
 }
