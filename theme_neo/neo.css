@@ -2,6 +2,8 @@
     font-family: 'Raleway';
     src: url(Raleway-VariableFont_wght.ttf)
 }
+
+
 body {
 	background-color: #0c0c0e;
 	color: white;
@@ -79,6 +81,12 @@ main, .main {
         margin-right: 20%;
     }
 }
+@media (min-width: 500px) {
+    .mobileBreak {
+        display: none;
+    }
+
+}
 
 h1 {
     border-bottom: 1px solid #b60000;
@@ -133,6 +141,7 @@ h2 {
 }
 .button:hover {
     background-color: white;
+    border-color: #cf0000
 }
 .vertical-bar {
     height: 40px;
@@ -156,6 +165,7 @@ dt {
     padding-right: 16px;
     margin-bottom: 4px;
     position: relative;
+    align-content: center;
 }
 dt::after {
     content: '';
@@ -199,3 +209,13 @@ figure img {
 .large {
     flex: 100%
 }
+
+@media (max-width:500px) {
+    .vertical-bar {
+        display: none;
+    }
+}
+@media (max-width:670px) {
+    .navFrame {
+        height: 130px;
+    }
