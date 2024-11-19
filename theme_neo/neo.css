@@ -2,20 +2,69 @@
     font-family: 'Raleway';
     src: url(Raleway-VariableFont_wght.ttf)
 }
-
-
-body {
-	background-color: #0c0c0e;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    src: url(Raleway-Italic-VariableFont_wght.ttf)
 }
 
-iframe, aside, main, section, footer, .frame {
-    background-color: #1c1c1e;
+/* Basic Layout */
+
+.flex {
+    display: flex;
+}
+.columns {
+    flex-direction: column;
+}
+aside {
+    flex: 15%;
+}
+.centeredText {
+    text-align: center;
+}
+.large {
+    flex: 100%;
+}
+.small {
+    flex: 50%;
+}
+main, .main {
+    flex-grow: 1;
+}
+.multi {
+    margin-top: 20px;
+}
+.final {
+    margin-bottom: 0;
+}
+.navFrame {
+    height: 68px;
+    width: calc(100% - 20px);
+}
+/* Media Queries */
+@media (max-width: 900px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+@media (min-width:1600px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (max-width:500px) {
+    .vertical-bar {
+        display: none;
+    }
+}
+@media (max-width:670px) {
+    .navFrame {
+        height: 130px;
+    }
 }
 
+/* Combination Styling and Behavior */
 header {
     display: flex;
     justify-content: center;
@@ -35,120 +84,36 @@ iframe {
     margin: 10px;
 }
 
-main, aside, section {
-    margin: 10px;
-    border: 1px solid #b60000;
-    padding: 10px;
-    display: inline-block
+figure {
+    background-color: #2c2c2e;
+    border: solid #b60000 1px;
+    max-width: 100%;
+    margin: 0;
 }
 
-aside {
-    flex: 15%;
-}
-
-a {
-    color: #74fdff;
-}
-a:visited {
-    color: #979eff;
-}
-
-.columns {
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-.centeredText {
+figcaption {
     text-align: center;
 }
-.flex {
-    display: flex;
-}
-main, .main {
-    flex-grow: 1;
-}
-.multi {
-    margin-top: 20px;
-}
-@media (max-width: 900px) {
-    .flex {
-        flex-direction: column;
-    }
-}
-@media (min-width:1600px) {
-    body {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-@media (min-width: 500px) {
-    .mobileBreak {
-        display: none;
-    }
 
-}
-
-h1 {
-    border-bottom: 1px solid #b60000;
-    font-size: 3em;
-    text-align: center;
-}
-h2 {
-    border-bottom: 1px solid #b60000;
-    margin-top: 0;
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .updates {
     margin: 0;
+    margin-top: 15px;
     flex-grow:1;
-    height: 210px;
+    height: 514px;
 }
 .frame {
     padding: 0;
     margin: 0;
 }
 
-.navbar {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    border: solid #b60000 1px;
-    padding: 10px;
-}
-.navFrame {
-    height: 68px;
-    width: calc(100% - 20px);
-}
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    border-radius: 8px;
-    background-color: #cf0000;
-    color: black;
-    font-weight: bold;
-    flex: 1 0 0;
-    text-align: center;
-    padding: 3px;
-    align-self: stretch;
-}
-.button:visited {
-    color: black;
-}
-.button:hover {
-    background-color: white;
-    border-color: #cf0000
-}
-.vertical-bar {
-    height: 40px;
-    width: 1px;
-    background-color: #b60000;
-    margin: 0 10px;
-}
 
 dl {
     display: grid;
@@ -180,24 +145,97 @@ dd {
     margin: 0;
     padding-left: 16px;
 }
-
-figure {
-    background-color: #2c2c2e;
+.navbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     border: solid #b60000 1px;
-    max-width: 100%;
-    margin: 0;
+    padding: 10px;
 }
 
-figcaption {
+
+
+/* Basic Styling */
+
+body {
+	background-color: #0c0c0e;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+iframe, aside, main, section, footer, .frame {
+    background-color: #1c1c1e;
+}
+
+main, aside, section {
+    margin: 10px;
+    border: 1px solid #b60000;
+    padding: 10px;
+    display: inline-block
+}
+
+a {
+    color: #74fdff;
+}
+a:visited {
+    color: #979eff;
+}
+
+h1 {
+    border-bottom: 1px solid #b60000;
+    font-size: 3em;
     text-align: center;
 }
+h2, h3 {
+    border-bottom: 1px solid #b60000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: #cf0000;
+    color: black;
+    font-weight: bold;
+    flex: 1 0 0;
+    text-align: center;
+    padding: 3px;
+    align-self: stretch;
+}
+.button:visited {
+    color: black;
+}
+.button:hover {
+    background-color: white;
+    border-color: #cf0000
+}
+
+.silver, .traveler {
+    color: grey;
+    background-color: darkgrey;
+    border-color: black;
+}
+.silver:hover, .traveler:hover {
+    background-color: darkgrey;
+    border-color: black;
+}
+
+/* cool and fun new stuff i'm adding */
+
+.vertical-bar {
+    height: 40px;
+    width: 1px;
+    background-color: #b60000;
+    margin: 0 10px;
 }
 
 .hint, .hint:visited {
@@ -205,17 +243,8 @@ figure img {
     font-size: 0.75em;
     text-decoration: none;
 }
-
-.large {
-    flex: 100%
+.hoverable {
+    text-decoration: underline dotted;
 }
 
-@media (max-width:500px) {
-    .vertical-bar {
-        display: none;
-    }
-}
-@media (max-width:670px) {
-    .navFrame {
-        height: 130px;
-    }
+/* shit i can't be bothered to organize yet */
