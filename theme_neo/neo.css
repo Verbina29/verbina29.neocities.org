@@ -228,7 +228,9 @@ h2, h3 {
     background-color: darkgrey;
     border-color: black;
 }
-
+.silver:visited, .traveler:visited {
+    color:grey;
+}
 /* cool and fun new stuff i'm adding */
 
 .vertical-bar {
