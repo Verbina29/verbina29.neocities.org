@@ -1,0 +1,94 @@
+     <div class="columns flex">
+      <section class="main">
+        <h1 class="noMargins">TEMPLATE</h1>
+        <div class="flex">
+          <section class="pronouns">
+            <h2 class="centeredText">KEY</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-love">love</li>
+              <li class="pronouns-like">like</li>
+              <li class="pronouns-neutral">neutral</li>
+              <li class="pronouns-dislike">dislike</li>
+              <li class="pronouns-hate">hate</li>
+            </ul>
+          </section>
+          <section class="wide pronouns">
+            <h2>NAMES</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">Name</li>
+            </ul>
+          </section>
+          <section class="wide pronouns">
+            <h2>PRONOUNS</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">they/them</li>
+              <li class="pronouns-neutral">it/its</li>
+              <li class="pronouns-neutral">she/her</li>
+              <li class="pronouns-neutral">he/him</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="flex">
+          <section class="wide pronouns">
+            <h2>HONORIFICS/TITLES</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">[no honorific]</li>
+              <li class="pronouns-neutral">mx.</li>
+              <li class="pronouns-neutral">mr.</li>
+              <li class="pronouns-neutral">ms.</li>
+              <li class="pronouns-neutral">sir</li>
+              <li class="pronouns-neutral">ma'am</li>
+              <li class="pronouns-neutral">madam</li>
+            </ul>
+          </section>
+          <section class="wide pronouns">
+            <h2>PERSON/FAMILY DESCRIPTIONS</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">person</li>
+              <li class="pronouns-neutral">man</li>
+              <li class="pronouns-neutral">woman</li>
+              <li class="pronouns-neutral">lady</li>
+              <li class="pronouns-neutral">dude</li>
+              <li class="pronouns-neutral">guy</li>
+              <li class="pronouns-neutral">enby</li>
+              <li class="pronouns-neutral">boy</li>
+              <li class="pronouns-neutral">girl</li>
+              <li class="pronouns-neutral">bro</li>
+              <li class="pronouns-neutral">sis</li>
+              <li class="pronouns-neutral">sib</li>
+            </ul>
+          </section>
+          <section class="wide pronouns">
+            <h2>COMPLIMENTS</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">pretty</li>
+              <li class="pronouns-neutral">handsome</li>
+              <li class="pronouns-neutral">cute</li>
+              <li class="pronouns-neutral">hot</li>
+              <li class="pronouns-neutral">sexy</li>
+            </ul>
+          </section>
+          <section class="wide pronouns">
+            <h2>RELATIONSHIPS</h2>
+            <ul class="pronouns-container">
+              <li class="pronouns-neutral">friend</li>
+              <li class="pronouns-neutral">buddy</li>
+              <li class="pronouns-neutral">pal</li>
+              <li class="pronouns-neutral">partner</li>
+              <li class="pronouns-neutral">boyfriend</li>
+              <li class="pronouns-neutral">girlfriend</li>
+              <li class="pronouns-neutral">enbyfriend</li>
+              <li class="pronouns-neutral">joyfriend</li>
+              <li class="pronouns-neutral">husband</li>
+              <li class="pronouns-neutral">wife</li>
+              <li class="pronouns-neutral">spouse</li>
+              <li class="pronouns-neutral">kissmate</li>
+              <li class="pronouns-neutral">darling</li>
+              <li class="pronouns-neutral">beloved</li>
+              <li class="pronouns-neutral">boo</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </div>
