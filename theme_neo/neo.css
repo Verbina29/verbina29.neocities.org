@@ -169,6 +169,11 @@ body {
     padding: 0;
 }
 
+html {
+    scrollbar-color: #660000 #242426;
+}
+
+
 iframe, aside, main, section, footer, .frame {
     background-color: #1c1c1e;
 }
@@ -222,16 +227,16 @@ h2, h3 {
     border-color: #cf0000
 }
 
-.silver, .traveler {
+.grey {
     color: grey;
     background-color: darkgrey;
     border-color: black;
 }
-.silver:hover, .traveler:hover {
+.grey:hover {
     background-color: darkgrey;
     border-color: black;
 }
-.silver:visited, .traveler:visited {
+.grey:visited {
     color:grey;
 }
 /* cool and fun new stuff i'm adding */
@@ -251,6 +256,10 @@ h2, h3 {
 }
 .hoverable {
     text-decoration: underline dotted;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* pronouns page specific items */
