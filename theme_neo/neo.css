@@ -47,9 +47,18 @@ main, .main {
 .final {
     margin-bottom: 0;
 }
+.gallery .final {
+    margin-bottom: -.75em;
+}
 .navFrame {
     height: 68px;
     width: calc(100% - 20px);
+}
+.gallery figure {
+    margin-top: 1.5em;
+}
+.gallery img {
+    max-height: 50em;
 }
 /* Media Queries */
 @media (max-width: 900px) {
@@ -120,6 +129,18 @@ figure img {
 .frame {
     padding: 0;
     margin: 0;
+}
+
+.spoiler img {
+    filter: blur(25px);
+    width: 100% + 25px;
+    height: 100% + 25px;
+}
+.spoiler {
+    overflow: hidden;
+}
+.spoiler img:hover {
+    filter: blur(0);
 }
 
 

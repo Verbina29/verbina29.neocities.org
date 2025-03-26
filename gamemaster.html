@@ -7,7 +7,7 @@
     <meta content="Gamemaster!!!" property="og:title" />
     <meta content="Information on Gamemaster, the Zone, and Gamemaster's Zone." property="og:description" />
     <meta content="https://verbina29.neocities.org/gamemaster.html" property="og:url" />
-    <meta content="https://verbina29.neocities.org/embed_icon.gif" property="og:image" />
+    <meta content="https://verbina29.neocities.org/gamemaster/GM_refsheet.png" property="og:image" />
     <meta content="#B60000" data-react-helmet="true" name="theme-color" />
     <link rel="shortcut icon" href="https://verbina29.neocities.org/favicon.ico">
 
@@ -114,11 +114,23 @@
         </section>
         <aside><!--miniGM Images-->
           <figure>
-            <img src="gamemaster/miniGM_folded.png" onclick="this.src='gamemaster/miniGM.png'" alt="A miniGM, a blue tablet shaped like Gamemaster's head.">
-            <figcaption>A miniGM. <span class="hint">Click to unfold!</span></figcaption>
+            <a id="minigmLink" href="gamemaster/miniGM_folded.png"><img id="minigmImg" src="gamemaster/miniGM_folded.png" alt="A miniGM, a blue tablet shaped like Gamemaster's head."></a>
+            <figcaption>A miniGM. <span onclick="toggleImage('minigmLink', 'gamemaster/miniGM.png', 'gamemaster/miniGM_folded.png', 'minigmImg')" class="hint">Click here to unfold!</span></figcaption>
           </figure>
         </aside>
       </div>
     </div>
   </body>
 </html>
+
+<script>
+  function toggleImage(linkId, img1, img2, imgId) {
+    const linkElement = document.getElementById(linkId);
+    const imgElement = document.getElementById(imgId);
+
+    const newValue = (linkElement.href.endsWith(img1)) ? img2 : img1;
+
+    linkElement.href = newValue;
+    imgElement.src = newValue;
+  }
+</script>
