@@ -7,6 +7,32 @@
     font-style: italic;
     src: url(Raleway-Italic-VariableFont_wght.ttf)
 }
+/* Color Variables */
+:root {
+    --backgroundBase:  #0c0c0e;
+    --backgroundSecondary: #1c1c1e;
+    --backgroundTertiary:  #2c2c2e;
+
+    --textColor: white;
+    --textColorSecondary: black;
+
+    --frameColor: #b60000;
+    --buttonColor: #cf0000;
+    --buttonBorder: white;
+    --linkColor: #74fdff;
+    --linkColorVisited: #979eff;
+    --hintColor: lightgrey;
+
+    --shadowSecondary: #18181a;
+    --shadowSecondarySecondary: #202023;
+
+    --scrollbarPrimary: #660000;
+    --scrollbarSecondary: #242426;
+
+    --greyedOutText: grey;
+    --greyedOutBackground: darkgrey;
+    --greyedOutBorder: black;
+}
 
 /* Basic Layout */
 
@@ -103,7 +129,7 @@ iframe {
 }
 
 figure {
-    background-color: #2c2c2e;
+    background-color: var(--backgroundTertiary);
     max-width: 100%;
     margin: 0;
 }
@@ -150,7 +176,7 @@ dl {
     padding: 8px;
     position: relative;
     margin-bottom: 0;
-    background-color: #2c2c2e;
+    background-color: var(--backgroundTertiary);
 }
 dt {
     text-align: center;
@@ -167,7 +193,7 @@ dt::after {
     top: 0px;
     height: calc(100% + 4px);
     width: 1px;
-    background: #b60000;
+    background: var(--frameColor);
 }
 dd {
     margin: 0;
@@ -184,28 +210,28 @@ dd {
 /* Borders */
 
 main, aside, section, .navbar, .subsection, .button, figure, dl, footer {
-    border: 1px solid #b60000;
+    border: 1px solid var(--frameColor);
     border-radius: 0px;
-    box-shadow:  5px 5px 10px #18181a, -5px -5px 10px #202023
+    box-shadow:  5px 5px 10px var(--shadowSecondary), -5px -5px 10px var(--shadowSecondarySecondary);
 }
 
 
 /* Basic Styling */
 
 body {
-    color: white;
+    color: var(--textColor);
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 html {
-    scrollbar-color: #660000 #242426;
-    background-color: #0c0c0e;
+    scrollbar-color: var(--scrollbarPrimary) var(--scrollbarSecondary);
+    background-color: var(--backgroundBase);
 }
 
 iframe, aside, main, section, footer, .frame {
-    background-color: #1c1c1e;
+    background-color: var(--backgroundSecondary);
 }
 
 main, aside, section {
@@ -215,19 +241,19 @@ main, aside, section {
 }
 
 a {
-    color: #74fdff;
+    color: var(--linkColor);
 }
 a:visited {
-    color: #979eff;
+    color: var(--linkColorVisited);
 }
 
 h1 {
-    border-bottom: 1px solid #b60000;
+    border-bottom: 1px solid var(--frameColor);
     font-size: 3em;
     text-align: center;
 }
 h2, h3 {
-    border-bottom: 1px solid #b60000;
+    border-bottom: 1px solid var(--frameColor);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -237,11 +263,11 @@ h2, h3 {
     align-items: center;
     justify-content: center;
     border-style: solid;
-    border-color: white;
+    border-color: var(--buttonBorder);
     border-width: 1px;
     border-radius: 8px;
-    background-color: #cf0000;
-    color: black;
+    background-color: var(--buttonColor);
+    color: var(--textColorSecondary);
     font-weight: bold;
     flex: 1 0 0;
     text-align: center;
@@ -249,17 +275,17 @@ h2, h3 {
     align-self: stretch;
 }
 .button:visited {
-    color: black;
+    color: var(--textColorSecondary);
 }
 .button:hover {
     background-color: white;
-    border-color: #cf0000
+    border-color: var(--buttonColor);
 }
 
 .grey {
-    color: grey;
-    background-color: darkgrey;
-    border-color: black;
+    color: var(--greyedOutText);
+    background-color: var(--greyedOutBackground);
+    border-color: var(--greyedOutBorder);
 }
 .grey:hover {
     background-color: darkgrey;
@@ -269,7 +295,7 @@ h2, h3 {
     color:grey;
 }
 .subsection {
-    background-color: #2c2c2e;
+    background-color: var(--backgroundSecondary);
     padding: 10px;
 }
 /* cool and fun new stuff i'm adding */
@@ -277,12 +303,12 @@ h2, h3 {
 .vertical-bar {
     height: 40px;
     width: 1px;
-    background-color: #b60000;
+    background-color: var(--frameColor);
     margin: 0 10px;
 }
 
 .hint, .hint:visited {
-    color: lightgrey;
+    color: var(--hintColor);
     font-size: 0.75em;
     text-decoration: none;
     font-weight: normal;
@@ -300,7 +326,7 @@ h2, h3 {
 
 /* pronouns page specific items */
 .pronouns {
-    background-color: #2c2c2e;
+    background-color: var(--backgroundSecondary);
 }
 .pronouns-container {
     list-style-type: none;
