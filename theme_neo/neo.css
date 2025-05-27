@@ -212,7 +212,6 @@ dd {
 main, aside, section, .navbar, .subsection, .button, figure, dl, footer {
     border: 1px solid var(--frameColor);
     border-radius: 0px;
-    box-shadow:  5px 5px 10px var(--shadowSecondary), -5px -5px 10px var(--shadowSecondarySecondary);
 }
 
 
