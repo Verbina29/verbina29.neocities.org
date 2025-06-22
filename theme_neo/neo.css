@@ -197,6 +197,8 @@ dt::after {
 }
 dd {
     margin: 0;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
     padding-left: 16px;
 }
 .navbar {
