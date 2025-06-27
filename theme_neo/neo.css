@@ -182,7 +182,7 @@ dt {
     text-align: center;
     font-weight: bold;
     padding-right: 16px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
     position: relative;
     align-content: center;
 }
@@ -297,6 +297,9 @@ h2, h3 {
 }
 .subsection {
     background-color: var(--backgroundSecondary);
+    padding: 10px;
+}
+.padded {
     padding: 10px;
 }
 /* cool and fun new stuff i'm adding */
