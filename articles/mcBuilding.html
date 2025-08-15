@@ -240,24 +240,25 @@
   </body>
 
   <script>
-function toggleImages(className, suffix1, suffix2) {
-  const elements = document.querySelectorAll(`.${className}`);
+  function toggleImages(className, suffix1, suffix2) {
+    const elements = document.getElementsByClassName(className);
 
-  elements.forEach(el => {
-    if (el.tagName === 'IMG') {
-      el.src = swapSuffix(el.src, suffix1, suffix2);
-    } else if (el.tagName === 'A') {
-      el.href = swapSuffix(el.href, suffix1, suffix2);
-    }
-  });
-
-  function swapSuffix(url, s1, s2) {
-    return url.endsWith(s1) ? url.slice(0, -s1.length) + s2
-         : url.endsWith(s2) ? url.slice(0, -s2.length) + s1
-         : url;
+    Array.from(elements).forEach((element) => {
+      if (element.tagName == "IMG") {
+        if (element.src.endsWith(suffix1)) {
+          element.src = element.src.replace(suffix1, suffix2);
+        } else {
+          element.src = element.src.replace(suffix2, suffix1);
+        }
+      } else if (element.tagName == "A") {
+        if (element.href.endsWith(suffix2)) {
+          element.href = element.href.replace(suffix2, suffix1);
+        } else {
+          element.href = element.href.replace(suffix1, suffix2);
+        }
+      }
+    });
   }
-}
-
 </script>
 
 </html>
