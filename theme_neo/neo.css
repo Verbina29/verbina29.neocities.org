@@ -20,9 +20,12 @@
     --frameColor: #b60000;
     --buttonColor: #cf0000;
     --buttonBorder: white;
+    --hintColor: lightgrey;
+
     --linkColor: #74fdff;
     --linkColorVisited: #979eff;
-    --hintColor: lightgrey;
+    --linkColorFaint: #c3ffff;
+    --linkColorVisitedFaint: #d2d6ff;
 
     --shadowSecondary: #18181a;
     --shadowSecondarySecondary: #202023;
@@ -33,6 +36,21 @@
     --greyedOutText: grey;
     --greyedOutBackground: darkgrey;
     --greyedOutBorder: black;
+
+/* Character-Specific Colors */
+    --percyTeal: #6dac98;
+    --percyTealLight: #a6e9d4;
+    --gmPurple: #5f3d9c;
+    --gmBlue: #245db8;
+    --chromaGreen: #02d12b;
+    --sedgeBlue: #5aa9ce;
+    --sedgeGreen: #acd97b;
+    --errataCyan: #9ffdf8;
+    --damascusRed: #a2011c;
+    --periscopePurple: #803f82;
+    --perimaPink: #f88dff;
+    --twoTeal: #6c93b7;
+    --twoPurple: #211838;
 }
 
 /* Basic Layout */
@@ -104,16 +122,34 @@ main, .main {
     text-align: right;
 }
 
-/* Media Queries */
+.grid {
+    display: grid;
+}
+.columnGrid {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.floatLeft {
+    float: left;
+    margin-right: 10px;
+}
+.headerNop { /* why did i call it that??? */
+    margin-bottom: 20px;
+}
+
+.mini {
+    max-width: 50%
+}
+
+
+/* Media Queries*/
 @media (max-width: 900px) {
     .flex {
         flex-direction: column;
     }
-}
-@media (min-width:1600px) {
-    body {
-        margin-left: 20%;
-        margin-right: 20%;
+    .grid {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width:500px) {
@@ -131,6 +167,7 @@ main, .main {
         flex-direction: column;
     }
 }
+
 
 /* Combination Styling and Behavior */
 header {
@@ -193,6 +230,7 @@ figure {
 
 figcaption {
     text-align: center;
+    border-top: 1px solid var(--frameColor);
 }
 
 figure img {
@@ -215,9 +253,10 @@ figure img {
 }
 
 .spoiler img {
-    filter: blur(25px);
+    filter: blur(25px) grayscale(80%);
     width: 100% + 25px;
     height: 100% + 25px;
+    transition: filter 0.2s ease-out;
 }
 .spoiler {
     overflow: hidden;
@@ -304,6 +343,15 @@ a {
 }
 a:visited {
     color: var(--linkColorVisited);
+}
+
+.faintLink {
+    color: var(--linkColorFaint);
+    text-decoration: none;
+}
+.faintLink:visited {
+    color: var(--linkColorVisitedFaint);
+    text-decoration: none;
 }
 
 h1 {
@@ -447,7 +495,50 @@ code {
     background-image: url('pronounsPage/hate.svg');
     filter: brightness(0.6) sepia(1) hue-rotate(310deg) saturate(9);
 }
+.pronouns-special {
+    background-image: url('pronounsPage/special.svg');
+    filter: brightness(0.6) sepia(1) hue-rotate(15deg) saturate(8);
+}
+.pronouns-funny {
+    background-image: url('pronounsPage/funny.svg');
+    filter: brightness(0.6) sepia(1) hue-rotate(-30deg) saturate(5);
+}
+.pronouns-friends {
+    background-image: url('pronounsPage/friends.svg');
+    filter: brightness(0.6) sepia(1) hue-rotate(60deg) saturate(3);
+}
+.pronouns-informal {
+    background-image: url('pronounsPage/informal.svg');
+    filter: brightness(0.6) sepia(1) hue-rotate(100deg) saturate(2);
+}
 
+/* Universe Color-Coding */
+.metalworks {
+    --frameColor: var(--sedgeBlue);
+}
+.hueshift {
+    --frameColor: var(--chromaGreen);
+    --buttonColor: var(--chromaGreen);
+}
+.gamemaster {
+    --frameColor: var(--gmBlue);
+}
+.percival {
+    --frameColor: var(--percyTeal);
+}
+.sylvolaia {
+    --frameColor: var(--errataCyan);
+    --buttonColor: var(--errataCyan);
+}
+.damascus {
+    --frameColor: var(--damascusRed);
+}
+.periscope {
+    --frameColor: var(--periscopePurple);
+}
+.manaweavers {
+    --frameColor: var(--twoTeal);
+}
 
 /* random shit */
 .noMargins {

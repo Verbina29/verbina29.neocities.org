@@ -10,6 +10,11 @@
               <li class="pronouns-neutral">neutral</li>
               <li class="pronouns-dislike">dislike</li>
               <li class="pronouns-hate">hate</li>
+              <li class="pronouns-funny">only jokingly</li>
+              <li class="pronouns-special">special criteria</li>
+              <li class="pronouns-friends">only with friends</li>
+              <li class="pronouns-informal">only informally</li>
+            </ul>
             </ul>
           </section>
           <section class="wide pronouns">
