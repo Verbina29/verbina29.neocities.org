@@ -344,6 +344,10 @@ a {
 a:visited {
     color: var(--linkColorVisited);
 }
+.fakeLink {
+    color: var(--linkColor);
+    text-decoration: underline
+}
 
 .faintLink {
     color: var(--linkColorFaint);
