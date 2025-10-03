@@ -7,6 +7,10 @@
     font-style: italic;
     src: url(Raleway-Italic-VariableFont_wght.ttf)
 }
+@font-face {
+    font-family: 'eleventh hour';
+    src: url("../misc/eleventh hour.ttf");
+}
 /* Color Variables */
 :root {
     --backgroundBase:  #0c0c0e;
@@ -36,6 +40,10 @@
     --greyedOutText: grey;
     --greyedOutBackground: darkgrey;
     --greyedOutBorder: black;
+
+    --textColorBlack: black;
+    --linkColorBlack: navy;
+    --linkColorBlackVisited: purple;
 
 /* Character-Specific Colors */
     --percyTeal: #6dac98;
@@ -434,6 +442,50 @@ code {
     border-radius: 4px;
 }
 
+.eleventhHour {
+    font-family: "eleventh hour", sans-serif;
+    font-size: 24px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+.eleventhHour a {
+    text-decoration: none;
+    border-bottom: 4px solid var(--linkColor);
+    padding-bottom: 4px;
+}
+.eleventhHour a:visited {
+    text-decoration: none;
+    border-bottom: 4px solid var(--linkColorVisited);
+    padding-bottom: 4px;
+}
+.eleventhHourSmall {
+    font-family: "eleventh hour", sans-serif;
+    font-size: 12px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+.eleventhHourSmall a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--linkColor);
+    padding-bottom: 2px;
+}
+.eleventhHourSmall a:visited {
+    text-decoration: none;
+    border-bottom: 2px solid var(--linkColorVisited);
+    padding-bottom: 2px;
+}
+
+.blackText {
+    --textColor: var(--textColorBlack);
+    --linkColor: var(--linkColorBlack);
+    --linkColorVisited: var(--linkColorBlackVisited);
+}
+.evilBlackText {
+    --textColor: var(--textColorBlack);
+    --linkColor: var(--textColorBlack);
+    --linkColorVisited: var(--textColorBlack);
+}
+
 /* cool and fun new stuff i'm adding */
 
 .vertical-bar {
@@ -546,4 +598,15 @@ code {
 /* random shit */
 .noMargins {
     margin: 0;
+}
+
+.wafringWidget {
+    border: 4px solid white;
+    background: linear-gradient(to bottom, #2abffd, #2a6dfd);
+    border-radius: 24px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: fit-content;
 }
